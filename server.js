@@ -16,19 +16,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //Middleware that formatts req in a consumable formatt
 app.use(bodyParser.json());
 
-//Setup connection to mysql db here
-//This is something the db team should have already configured
+// bring in the models
+var db = require("./models");//don't know path yet
 
+//Routes
+var routes = require("./routes");
 
-//routes: get, put, post, and delete
+app.use("/", routes);
 
-app.get('/get', function (req, res) {
-  res.send("get");
-  //add a sql query here that gets some information from the data base
-  //send this data in res.send
-  //our ajax call will console.log the res. You can test this by selecting the "get" button
-
-})
 
 // Start the server
 app.listen(PORT, function() {
