@@ -1,7 +1,7 @@
 {
-  "name": "test",
+  "name": "testrepo",
   "version": "1.0.0",
-  "description": "test",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,15 +11,15 @@
     "type": "git",
     "url": "git+https://github.com/patella08/Test-repo.git"
   },
-  "author": "BackEndTeam",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/patella08/Test-repo/issues"
   },
   "homepage": "https://github.com/patella08/Test-repo#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "mysql": "^2.15.0",
-    "require": "^2.4.20"
+    "mysql": "^2.15.0"
   }
 }
